@@ -12,36 +12,43 @@
 1.フロントパネルから設定する手順
 ----
 
- 1-1. フロントパネルに触れ、画面を起動してください。
-   .. image:: ./media/start.jpg
+| フロントパネルに触れ、画面を起動してください。
+
+.. image:: ./media/start.jpg
       :width: 100
 
- 1-2. Setupを選択してください。
-   .. image:: ./media/2.jpg
+| ``Setup``を選択してください。
+
+.. image:: ./media/2.jpg
       :width: 100
 
- 1-3. Managememtを選択してください。
-   .. image:: ./media/3.jpg
+| ``Managememt``を選択してください。
+
+.. image:: ./media/3.jpg
+          :width: 100
+
+| ``IPv4``を選択し、``IPv4 Adress``を選択してください。
+
+.. image:: ./media/4.jpg
       :width: 100
 
- 1-4. IPv4を選択し、IPv4 Adressを選択してください。
-   .. image:: ./media/4.jpg
-      :width: 100
+| 上下矢印を使用して管理IPを設定してください。
+| 設定完了しましたら``Save``をクリックして設定を保存し、Management画面に戻ってください。
 
- 1-5. 上下矢印を使用して管理IPを設定してください。
-      設定完了しましたらSaveをクリックして設定を保存し、Management画面に戻ってください。
 .. image:: ./media/5.jpg
       :width: 100
 
- 1-6 . パネルをスクロールIPv4 Prefix Lengthを選択し、
-　　　 上下矢印を使用してサブネットマスクを設定してください。
-       設定完了しましたらSaveをクリックして設定を保存し、Management画面に戻ってください。
-   .. image:: ./media/6.jpg
+| パネルをスクロール``IPv4 Prefix Length``を選択し、
+| 上下矢印を使用してサブネットマスクを設定してください。
+| 設定完了しましたら``Save``をクリックして設定を保存し、Management画面に戻ってください。
+ 
+.. image:: ./media/6.jpg
       :width: 100
 
- 1-7 . パネルをスクロールIPv4 Gatewayを選択し、上下矢印を使用してデフォルトゲートウェイを設定してください。
-       設定完了しましたらSaveをクリックして設定を保存し、Management画面に戻ってください。
-   .. image:: ./media/6.jpg
-      :width: 100
+| パネルをスクロール``IPv4 Gateway``を選択し、上下矢印を使用してデフォルトゲートウェイを設定してください。
+  設定完了しましたら``Save``をクリックして設定を保存し、Management画面に戻ってください。
 
- 1-8 . commitを選択し、設定を反映してください。
+.. image:: ./media/6.jpg
+     :width: 100
+
+| ``commit``をクリックし、設定内容を反映してください。
