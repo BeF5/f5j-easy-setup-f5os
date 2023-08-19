@@ -4,13 +4,13 @@
 設定方法
 ====
 
--  フロントパネルから設定する
--  コンソールからログインし設定する
+-  1.フロントパネルから設定する
+-  2.コンソールからログインし設定する
 
 ====
 
 1.フロントパネルから設定する手順
-----
+~~~~~~~~
 
 | フロントパネルに触れ、画面を起動してください。
 
@@ -52,3 +52,29 @@
      :width: 100
 
 | ``commit``をクリックし、設定内容を反映してください。
+
+
+2.コンソールからログインし設定する手順
+~~~~~~~~
+
+| コンソールに接続し、adminでログインする
+| Configモードに移行する
+
+.. code-block:: cmdin
+
+   r10k-2# config
+
+| 管理IPのIPアドレス、サブネットマスク長、デフォルトGatewayのIPアドレスを設定する
+
+.. code-block:: cmdin
+
+   r10k-2(config)# system mgmt-ip config ipv4 system address 10.176.10.161
+   r10k-2(config)# system mgmt-ip config ipv4 prefix-length 24
+   r10k-2(config)# system mgmt-ip config ipv4 gateway 10.176.10.1
+
+
+| 設定を反映する
+
+.. code-block:: cmdin
+
+   r10k-2(config)# commit
