@@ -81,3 +81,9 @@ Configモードに移行する
 .. code-block:: cmdin
 
    r10k-2(config)# commit
+
+
+.. NOTE::
+   rSeriesでは、内部通信用に”100.64.0.0/12” (デフォルト)を予約済みです。
+   データ通信 (In-band)のトラフィックと重複しても影響はありませんが、Management Interface (Out-of-band)のIPアドレスと重複する場合、通信に支障をきたします。
+  
