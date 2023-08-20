@@ -1,11 +1,10 @@
-
 F5OS 基本設定
 ########
 
 本手順ではWebGUIを使用してF5OSの基本設定をする方法を紹介します。
 
 
-1.Hostnameの設定
+1. Hostnameの設定
 --------------
 
 画面左側にあるメニューバーから ``SYSTEM SETTINGS >> General`` を選択し、一般設定画面を開いてください。
@@ -18,7 +17,7 @@ Hostnameを入力し、画面右下にある ``Save`` をクリックして保�
 .. image:: ./media/host-name.png
       :width: 250
 
-2.ライセンスの設定
+2. ライセンスの設定
 --------------
 
 画面左側のメニューバーから ``SYSTEM SETTINGS >> Licensing`` を選択し、ライセンス適用画面を開いてください。
@@ -32,7 +31,7 @@ Hostnameを入力し、画面右下にある ``Save`` をクリックして保�
 .. image:: ./media/license.png
       :width: 250
 
-3.DNSサーバの設定
+3. DNSサーバの設定
 --------------
 
 画面左側のメニューバーから ``SYSTEM SETTINGS >> DNS`` を選択し、DNS設定画面を開いてください。
@@ -46,7 +45,7 @@ DNS Lookup Serversの項目にて ``Add`` を選択し、DNSサーバのIP addre
       :width: 250
 
 
-4.時刻設定
+4. 時刻設定
 --------------
 
 画面左側のメニューバーから ``SYSTEM SETTINGS >> Time Setings`` を選択し、時刻設定画面を開いてください。
@@ -56,7 +55,7 @@ DNS Lookup Serversの項目にて ``Add`` を選択し、DNSサーバのIP addre
 .. image:: ./media/time.png
       :width: 250
 
-4-1.　NTP Serverの設定
+4-1. NTP Serverの設定
 ~~~~~~~~
 NTP Serversの項目にて ``Add`` を選択し、NTPサーバのHostnameを入力し、
 
@@ -74,7 +73,7 @@ Time Zoneの項目にてドロップダウンリストから該当するタイ�
       :width: 250
 
 
-5.ログ設定
+5. ログ設定
 --------------
 
 画面左側のメニューバーから ``SYSTEM SETTINGS >> Log Setings`` を選択し、ログ設定画面を開いてください。
@@ -112,7 +111,7 @@ Base Directory項目にてドロップダウンリストから ``log/system`` �
 .. image:: ./media/log-file.png
       :width: 250
 
-6.SNMP設定
+6. SNMP設定
 --------------
 SNMPリクエストを受けるけるためには接続許可リストへの追加、およびSNMP設定が必要です。
 
