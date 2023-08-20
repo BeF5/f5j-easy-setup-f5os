@@ -42,7 +42,9 @@ tenant設定
 
 .. NOTE::
   テナントのstatusがConfigured/Provisioningedとなっている時はリソースサイズを変更可能ですが、Deployすると変更不可となります。
-  リサイズが必要となった際にはstatusを上記どちらかの状態へ変更する必要があります。
+  リサイズが必要となった際にはstateを上記どちらかの状態へ変更する必要があります。
+  また、Stateが *Deployed* になっている場合には、BIG-IPテナントを停止した場合でも自動で起動するようにF5OS-A側で制御するため、
+  テナントを停止する場合には、StateをDeployedからProvisionedにご変更ください。
 
 .. image:: ./media/tenant-deploy.png
       :width: 250
@@ -51,3 +53,17 @@ tenant設定
 
 .. image:: ./media/tenant-deployed.png
       :width: 500
+
+1-4.　テナントの削除
+~~~~~~~~
+
+ ``TENANT MANAGEMENT >> Tenant Deployments`` において対象テナントを選択し、 ``Delete`` クリックしてください。
+
+テナント削除について改めて確認するポップアップに対して ``OK`` をクリックするとテナントは削除されます。
+
+.. image:: ./media/tenant-delete.png
+      :width: 500
+
+
+
+
