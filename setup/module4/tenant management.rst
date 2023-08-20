@@ -57,7 +57,7 @@ tenant設定
 1-4.　テナントの削除
 ~~~~~~~~
 
- ``TENANT MANAGEMENT >> Tenant Deployments`` において対象テナントを選択し、 ``Delete`` クリックしてください。
+``TENANT MANAGEMENT >> Tenant Deployments`` において対象テナントを選択し、 ``Delete`` クリックしてください。
 
 テナント削除について改めて確認するポップアップに対して ``OK`` をクリックするとテナントは削除されます。
 
