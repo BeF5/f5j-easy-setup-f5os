@@ -36,7 +36,7 @@ F5OS Tenant管理
 
 .. NOTE::
   Stateが *Deployed* になっている場合には、BIG-IPテナントを停止した場合でも自動で起動するようにF5OS-A側で制御するため、
-  テナントを停止する場合には、StateをDeployedからProvisionedにご変更する必要があります。
+  テナントを停止する場合には、StateをDeployedからProvisionedに変更する必要があります。
 
 .. image:: ./media/tenant-deploy.png
       :width: 250
