@@ -35,10 +35,8 @@ tenant管理
 テナントに割り当てるリソースを設定し、テナントの状態をConfigured/Provisioning/Deoloyedから選択可能です。
 
 .. NOTE::
-  テナントのstatusがConfigured/Provisioningedとなっている時はリソースサイズを変更可能ですが、Deployすると変更不可となります。
-  リサイズが必要となった際にはstateを上記どちらかの状態へ変更する必要があります。
-  また、Stateが *Deployed* になっている場合には、BIG-IPテナントを停止した場合でも自動で起動するようにF5OS-A側で制御するため、
-  テナントを停止する場合には、StateをDeployedからProvisionedにご変更ください。
+  Stateが *Deployed* になっている場合には、BIG-IPテナントを停止した場合でも自動で起動するようにF5OS-A側で制御するため、
+  テナントを停止する場合には、StateをDeployedからProvisionedにご変更してください。
 
 .. image:: ./media/tenant-deploy.png
       :width: 250
@@ -48,7 +46,20 @@ tenant管理
 .. image:: ./media/tenant-deployed.png
       :width: 500
 
-4.　テナントの削除
+4. テナントのリサイズ
+--------------
+``TENANT MANAGEMENT >> Tenant Deployments`` において対象テナントを選択し、状態を ``Provisione`` へ変更します。
+
+テナントのstatusがProvisionedとなったらテナント名をクリックし、設定画面においてリソースサイズを変更します。
+
+.. NOTE::
+   Resource ProvisioningにおいてRecommendedを選択している場合、
+   vCPUの数に応じてメモリ量は自動的に変更されます。
+
+.. image:: ./media/tenant-provisioned.png
+      :width: 500
+
+5. テナントの削除
 --------------
 ``TENANT MANAGEMENT >> Tenant Deployments`` において対象テナントを選択し、 ``Delete`` クリックしてください。
 
