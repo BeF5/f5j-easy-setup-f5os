@@ -17,7 +17,7 @@ F5OS Tenant管理
 
 2. テナントイメージのアップロード
 --------------
-画面左側にあるメニューバーから ``TENANT MANAGEMENT >> Tenant Images`` を選択し、テナントイメージの管理画面を開いてください。
+画面左側にあるメニューバーから ``TENANT MANAGEMENT >> Tenant Images`` を選択し、テナントイメージの管理画面を開きます。
 
 ``Upload`` をクリックしアップロードするイメージファイルを選択します。
 
@@ -26,7 +26,7 @@ F5OS Tenant管理
 
 3. テナントの設定
 --------------
-画面左側にあるメニューバーから ``TENANT MANAGEMENT >> Tenant Deployments`` を選択し、 ``Add`` をクリックしてください。
+画面左側にあるメニューバーから ``TENANT MANAGEMENT >> Tenant Deployments`` を選択し、 ``Add`` をクリックします。
 
 作成するテナント名、および使用するイメージファイル、およびテナントの管理インターフェースを設定します。
 
@@ -36,7 +36,7 @@ F5OS Tenant管理
 
 .. NOTE::
   Stateが *Deployed* になっている場合には、BIG-IPテナントを停止した場合でも自動で起動するようにF5OS-A側で制御するため、
-  テナントを停止する場合には、StateをDeployedからProvisionedにご変更してください。
+  テナントを停止する場合には、StateをDeployedからProvisionedにご変更する必要があります。
 
 .. image:: ./media/tenant-deploy.png
       :width: 250
@@ -61,7 +61,7 @@ F5OS Tenant管理
 
 5. テナントの削除
 --------------
-``TENANT MANAGEMENT >> Tenant Deployments`` において対象テナントを選択し、 ``Delete`` クリックしてください。
+``TENANT MANAGEMENT >> Tenant Deployments`` において対象テナントを選択し、 ``Delete`` クリックします。
 
 テナント削除について改めて確認するポップアップに対して ``OK`` をクリックするとテナントは削除されます。
 
