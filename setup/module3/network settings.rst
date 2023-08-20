@@ -39,6 +39,7 @@ Network設定
 
 .. image:: ./media/port-groups-5k10k.png
       :width: 250
+      :align: right
 
 2. Vlanの設定
 --------------
@@ -49,7 +50,7 @@ Network設定
 
 ``Save & Close`` をクリックし、設定を保存してください。
 
-.. image:: ./media/vlan.png
-   :width: 250
-.. image:: ./media/vlan-add.png
-   :width: 250
++-----------------------------------+----------------------------------+
+| .. image:: ./media/vlan.png       | .. image:: ./media/vlan-add.png  | 
+|    :width: 250                    |    :width: 250                   | 
++-----------------------------------+----------------------------------+
