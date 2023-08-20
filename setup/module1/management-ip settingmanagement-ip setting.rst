@@ -15,7 +15,7 @@ F5OS 管理IP設定
 --------------
 1-1. フロントパネルから管理IPを設定する
 ~~~~~~~~
-フロントパネルに触れ、画面を起動してください。https://github.com/shu9601/f5j-easy-setup-f5os/tree/main/setup/management-ip%20setting
+フロントパネルに触れ、画面を起動してください。
 
 .. image:: ./media/start.jpg
       :width: 100
