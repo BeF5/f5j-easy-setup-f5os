@@ -27,7 +27,7 @@ tenant設定
 ``Upload`` をクリックしアップロードするイメージファイルを選択します。
 
 .. image:: ./media/tenant-image-upload.png
-      :width: 250
+      :width: 400
 
 1-3.　テナントの設定
 ~~~~~~~~
@@ -50,4 +50,4 @@ tenant設定
 デプロイが完了するとテナントのstatusが ``Running`` となり、Running Versionに稼働中のTMOSバージョンが表示されます。
 
 .. image:: ./media/tenant-deployed.png
-      :width: 250
+      :width: 400
