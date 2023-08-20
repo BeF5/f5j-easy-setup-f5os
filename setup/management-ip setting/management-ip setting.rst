@@ -108,3 +108,11 @@ Configモードに移行する
     RFC6598   System uses 100.64/10 as specified by RFC6598
    r10k-2(config)# system network config network-range-type RFC1918
    r10k-2(config)# commit
+
+4.設定した管理IPを利用してログインする手順
+~~~~~~~~
+
+設定した管理IPへ "https://<管理IP address>" を利用してGUIアクセスできるようになります。
+
+.. image:: ./media/login.jpg
+      :width: 100
