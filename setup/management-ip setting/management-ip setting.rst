@@ -84,4 +84,26 @@ Configモードに移行する
 .. NOTE::
    rSeriesでは、内部通信用に”100.64.0.0/12” (デフォルト)を予約済みです。
    データ通信 (In-band)のトラフィックと重複しても影響はありませんが、Management Interface (Out-of-band)のIPアドレスと重複する場合、通信に支障をきたします。
-  
+   この場合には手順3を実施し、内部通信に使用するアドレスを変更してください。
+
+3.内部通信に使用するアドレスを変更する手順（option）
+~~~~~~~~
+
+下記コマンドにより内部通信に使用しているアドレスを確認できます。
+
+.. code-block:: cmdin
+
+   r10k-2# show system network
+
+ご使用予定の環境に合わせ、Out-of-band通信と重複しないようアドレス種別を変更してください。
+
+`RFC` まで入力し、`Tab` キーを入力すると選択可能なアドレスの種類が表示できます。
+
+.. code-block:: cmdin
+
+   r10k-2# config
+   r10k-2(config)# system network config network-range-type RFC
+   Possible completions:  #デフォルトRFC6598
+   RFC1918   System uses 10.[0-15]/12 as specified by RFC1918
+   RFC6598   System uses 100.64/10 as specified by RFC6598
+
