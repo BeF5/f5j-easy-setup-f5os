@@ -50,4 +50,4 @@ tenant設定
 デプロイが完了するとテナントのstatusが ``Running`` となり、Running Versionに稼働中のTMOSバージョンが表示されます。
 
 .. image:: ./media/tenant-deployed.png
-      :width: 400
+      :width: 500
