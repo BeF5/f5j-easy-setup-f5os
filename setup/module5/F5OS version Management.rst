@@ -72,7 +72,7 @@ Configモードに移行し、PassphraseとSaltを設定します。
 ~~~~~~~~
 対象機器へWebUIで接続し、adminアカウントでログインします。
 
-画面左側にあるメニューバーから ``SYSTEM SETTINGS >> Configuration Baskup`` を選択します。
+画面左側にあるメニューバーから ``SYSTEM SETTINGS >> Configuration Backup`` を選択します。
 
 ``Create`` をクリックし、ファイル名を入力して ``Create`` をクリックします。
 
