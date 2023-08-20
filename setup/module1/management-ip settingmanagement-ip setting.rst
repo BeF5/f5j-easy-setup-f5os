@@ -1,18 +1,19 @@
-管理IP設定
+F5OS 管理IP設定
 ####
+
+本手順ではF5OSの管理IPを設定する手順を紹介します。
 
 設定方法
 ====
-設定方法は以下の２種類があります。
+設定方法は以下の2種類があります。
 
 -  フロントパネルから設定する方法
 -  コンソールからログインし設定する方法
 
-====
-
-1.フロントパネルから設定する手順
+1. 管理IPを設定する
+--------------
+1-1. フロントパネルから管理IPを設定する
 ~~~~~~~~
-
 フロントパネルに触れ、画面を起動してください。https://github.com/shu9601/f5j-easy-setup-f5os/tree/main/setup/management-ip%20setting
 
 .. image:: ./media/start.jpg
@@ -54,10 +55,8 @@
 
 ``commit`` をクリックし、設定内容を反映してください。
 
-
-2.コンソールからログインし設定する手順
+1-2. コンソールからログインし管理IPを設定する
 ~~~~~~~~
-
 コンソールに接続し、adminでログインする
 Configモードに移行する
 
@@ -73,22 +72,19 @@ Configモードに移行する
    r10k-2(config)# system mgmt-ip config ipv4 prefix-length 24
    r10k-2(config)# system mgmt-ip config ipv4 gateway 10.176.10.1
 
-
 設定を反映する
 
 .. code-block:: cmdin
 
    r10k-2(config)# commit
 
-
 .. NOTE::
    rSeriesでは、内部通信用に”100.64.0.0/12” (デフォルト)を予約済みです。
    データ通信 (In-band)のトラフィックと重複しても影響はありませんが、Management Interface (Out-of-band)のIPアドレスと重複する場合、通信に支障をきたします。
    この場合には手順3を実施し、内部通信に使用するアドレスを変更してください。
 
-3.内部通信に使用するアドレスを変更する手順（option）
-~~~~~~~~
-
+2. 内部通信に使用するアドレスを変更する手順（option）
+--------------
 下記コマンドにより内部通信に使用しているアドレスを確認できます。
 
 .. code-block:: cmdin
@@ -109,9 +105,8 @@ Configモードに移行する
    r10k-2(config)# system network config network-range-type RFC1918
    r10k-2(config)# commit
 
-4.設定した管理IPを利用してログインする手順
-~~~~~~~~
-
+3. 設定した管理IPを利用してログインする手順
+--------------
 ``https://<管理IP address>`` によって設定した管理IPへGUI接続できるようになります。
 
 .. image:: ./media/login.png
