@@ -2,9 +2,9 @@
 Network設定
 ########
 
-本手順ではWebGUIを使用してF5OSのNetwork設定をする方法を紹介します。
+本手順ではWebGUIを使用してF5OSのNetwork設定をする手順を紹介します。
 
-rSeriesではネットワーク設定はF5OSにおいて管理し、テナントはF5OSの設定を継承します。
+rSeriesではネットワーク設定はF5OSで管理し、テナントはF5OSにおける設定を継承します。
 
 1.Port Groupsの設定
 --------------
