@@ -1,8 +1,8 @@
 
-tenant管理
+F5OS Tenant管理
 ########
 
-本手順ではWebGUIを使用してF5OSのtenant管理をする手順を紹介します。
+本手順ではWebGUIを使用してF5OSのTenant管理をする手順を紹介します。
 
 
 1.　テナントイメージのダウンロード
