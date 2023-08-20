@@ -103,7 +103,8 @@ Configモードに移行する
 
    r10k-2# config
    r10k-2(config)# system network config network-range-type RFC
-   Possible completions:  #デフォルトRFC6598
-   RFC1918   System uses 10.[0-15]/12 as specified by RFC1918
-   RFC6598   System uses 100.64/10 as specified by RFC6598
-
+    Possible completions:  #デフォルトRFC6598
+    RFC1918   System uses 10.[0-15]/12 as specified by RFC1918
+    RFC6598   System uses 100.64/10 as specified by RFC6598
+   r10k-2(config)# system network config network-range-type RFC1918
+   r10k-2(config)# commit
