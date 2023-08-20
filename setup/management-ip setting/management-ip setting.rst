@@ -112,7 +112,7 @@ Configモードに移行する
 4.設定した管理IPを利用してログインする手順
 ~~~~~~~~
 
-設定した管理IPへ "https://<管理IP address>" を利用してGUIアクセスできるようになります。
+設定した管理IPへ ``https://<管理IP address>`` を利用してGUIアクセスできるようになります。
 
-.. image:: ./media/login.jpg
+.. image:: ./media/login.png
       :width: 100
