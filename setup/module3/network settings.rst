@@ -39,18 +39,49 @@ Network設定
 
 .. image:: ./media/port-groups-5k10k.png
       :width: 250
-      :align: right
 
 2. Vlanの設定
 --------------
 
-画面左側のメニューバーから ``NETWORK SETTINGS >> Port Goups`` を選択し、vlan設定画面を開いてください。
+画面左側のメニューバーから ``NETWORK SETTINGS >> VLANs`` を選択し、vlan設定画面を開いてください。
 
 ``Add`` をクリックし、作成するVlanのID、名前を入力してください。
 
 ``Save & Close`` をクリックし、設定を保存してください。
 
-+-----------------------------------+----------------------------------+
-| .. image:: ./media/vlan.png       | .. image:: ./media/vlan-add.png  | 
-|    :width: 250                    |    :width: 250                   | 
-+-----------------------------------+----------------------------------+
+.. image:: ./media/vlan-add.png
+   :width: 250
+
+3. Interfaceの設定
+--------------
+
+画面左側のメニューバーから ``NETWORK SETTINGS >> Interfaces`` を選択し、設定するインターフェースの名前をクリックしてください。
+
+割り当てるNative VLANをドロップダウンリストから選択し、Trunk Vlanにチェックをいれてください。
+
+``Save & Close`` をクリックし、設定を保存してください。
+
+.. NOTE::
+   １つのvlanを複数のインターフェースに紐づけることはできないため、
+   必要な場合には紐づけるインターフェースをリンクアグリゲーションでまとめてください。
+
+.. image:: ./media/interface.png
+      :width: 250
+
+
+4. LAGの設定
+--------------
+
+画面左側のメニューバーから ``NETWORK SETTINGS >> LAGs`` を選択しリンクアグリゲーションの設定画面を開いてください。
+
+``Add`` をクリックし、作成するLAGの名前、組み込むインターフェース、および割り当てるvlanを設定してください。
+
+``Save & Close`` をクリックし、設定を保存してください。
+
+.. NOTE::
+   LAG TypeではStatic/LACPを選択可能です。
+   LACPを選択する場合にはIntervalとModeの設定が必要です。
+
+.. image:: ./media/lag.png
+      :width: 250
+
