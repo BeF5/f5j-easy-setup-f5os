@@ -13,7 +13,7 @@
 1.フロントパネルから設定する手順
 ~~~~~~~~
 
-フロントパネルに触れ、画面を起動してください。
+フロントパネルに触れ、画面を起動してください。https://github.com/shu9601/f5j-easy-setup-f5os/tree/main/setup/management-ip%20setting
 
 .. image:: ./media/start.jpg
       :width: 100
