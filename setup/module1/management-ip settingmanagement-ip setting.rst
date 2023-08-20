@@ -15,57 +15,64 @@ F5OS 管理IP設定
 --------------
 1-1. フロントパネルから管理IPを設定する
 ~~~~~~~~
-フロントパネルに触れ、画面を起動してください。
+フロントパネルに触れ、画面を起動します。
 
 .. image:: ./media/start.jpg
       :width: 100
 
-``Setup`` を選択してください。
+``Setup`` を選択します。
 
 .. image:: ./media/2.jpg
       :width: 100
 
-``Managememt`` を選択してください。
+``Managememt`` を選択します。
 
 .. image:: ./media/3.jpg
           :width: 100
 
-``IPv4`` を選択し、 ``IPv4 Adress`` を選択してください。
+``IPv4`` を選択し、 ``IPv4 Adress`` を選択します。
 
 .. image:: ./media/4.jpg
       :width: 100
 
-上下矢印を使用して管理IPを設定してください。
-設定完了しましたら ``Save`` をクリックして設定を保存し、Management画面に戻ってください。
+上下矢印を使用して管理IPを設定します。
+
+``Save`` をクリックして設定を保存し、Management画面に戻ります。
 
 .. image:: ./media/5.jpg
       :width: 100
 
 パネルをスクロールし ``IPv4 Prefix Length`` を選択し、
-上下矢印を使用してサブネットマスクを設定してください。
-設定完了しましたら ``Save`` をクリックして設定を保存し、Management画面に戻ってください。
+
+上下矢印を使用してサブネットマスクを設定します。
+
+``Save`` をクリックして設定を保存し、Management画面に戻ります。
  
 .. image:: ./media/6.jpg
       :width: 100
 
-パネルをスクロール ``IPv4 Gateway`` を選択し、上下矢印を使用してデフォルトゲートウェイを設定してください。
-設定完了しましたら ``Save`` をクリックして設定を保存し、Management画面に戻ってください。
+パネルをスクロール ``IPv4 Gateway`` を選択し、
+
+上下矢印を使用してデフォルトゲートウェイを設定します。
+
+``Save`` をクリックして設定を保存し、Management画面に戻ります。
 
 .. image:: ./media/6.jpg
      :width: 100
 
-``commit`` をクリックし、設定内容を反映してください。
+``commit`` をクリックし、設定内容を反映します。
 
 1-2. コンソールからログインし管理IPを設定する
 ~~~~~~~~
-コンソールに接続し、adminでログインする
-Configモードに移行する
+コンソールに接続し、adminでログインします。
+
+続いてConfigモードに移行します。
 
 .. code-block:: cmdin
 
    r10k-2# config
 
-管理IPのIPアドレス、サブネットマスク長、デフォルトGatewayのIPアドレスを設定する
+管理IPのIPアドレス、サブネットマスク長、デフォルトGatewayのIPアドレスを設定します。
 
 .. code-block:: cmdin
 
@@ -73,26 +80,28 @@ Configモードに移行する
    r10k-2(config)# system mgmt-ip config ipv4 prefix-length 24
    r10k-2(config)# system mgmt-ip config ipv4 gateway 10.176.10.1
 
-設定を反映する
+最後にコミットし、設定を反映します。
 
 .. code-block:: cmdin
 
    r10k-2(config)# commit
 
-.. NOTE::
-   rSeriesでは、内部通信用に”100.64.0.0/12” (デフォルト)を予約済みです。
-   データ通信 (In-band)のトラフィックと重複しても影響はありませんが、Management Interface (Out-of-band)のIPアドレスと重複する場合、通信に支障をきたします。
-   この場合には手順3を実施し、内部通信に使用するアドレスを変更してください。
 
-2. 内部通信に使用するアドレスを変更する手順（option）
+2. 内部通信に使用するアドレスを変更する
 --------------
+rSeriesでは、内部通信用に”100.64.0.0/12” (デフォルト)を予約済みです。
+
+データ通信 (In-band)のトラフィックと重複しても影響はありませんが、Management Interface (Out-of-band)のIPアドレスと重複する場合、通信に支障をきたします。
+
+この場合には当該手順を実施し、内部通信に使用するアドレスを変更します。
+
 下記コマンドにより内部通信に使用しているアドレスを確認できます。
 
 .. code-block:: cmdin
 
    r10k-2# show system network
 
-ご使用予定の環境に合わせ、Out-of-band通信と重複しないようアドレス種別を変更してください。
+ご使用予定の環境に合わせ、Out-of-band通信と重複しないようアドレス種別を変更します。
 
 `RFC` まで入力し、`Tab` キーを入力すると選択可能なアドレスの種類が表示できます。
 
@@ -106,9 +115,9 @@ Configモードに移行する
    r10k-2(config)# system network config network-range-type RFC1918
    r10k-2(config)# commit
 
-3. 設定した管理IPを利用してログインする手順
+3. 設定した管理IPを利用してログインする
 --------------
-``https://<管理IP address>`` によって設定した管理IPへGUI接続できるようになります。
+``https://<管理IP address>`` によって設定した管理IPへGUI接続します。
 
 .. image:: ./media/login.png
       :width: 250
