@@ -38,7 +38,7 @@ rSeriesではネットワーク設定はF5OSで管理し、テナントはF5OS�
    Port1-2、は100GbE/40GbEを設定できますが、同一のモードを選択する必要があります。
    Port3-10については25GbE/10GbEを選択でき、通信モードは混在可能です。
 
-.. image:: ./media/port-groups-5k10k.png
+.. image:: ./media/port-groups-5k10k.jpg
       :width: 250
 
 2. Vlanの設定
