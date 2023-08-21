@@ -11,9 +11,7 @@ F5OS セットアップガイド・ラボガイド
 このページでは以下の内容をご紹介しております。
 
 .. toctree::
-   :numbered:
-   :titlesonly:
-   :caption: 目次:
+   :maxdepth: 2
    :glob:
 
    module*/module*
