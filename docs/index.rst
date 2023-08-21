@@ -12,6 +12,9 @@ F5OS セットアップガイド・ラボガイド
 - `F5OS バージョン管理手順 <https://f5j-f5os-setup-/>`__ 
 
 .. toctree::
+   :numbered:
    :titlesonly:
-   :caption: コンテンツ
+   :caption: 目次:
    :glob:
+
+   content*/content*
