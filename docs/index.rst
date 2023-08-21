@@ -6,20 +6,9 @@ F5OS セットアップガイド・ラボガイド
 このページでは、F5OSの初期設定の手順を紹介いたします。
 
 
-
 コンテンツ
 ----------------
 このページでは以下の内容をご紹介しております。
-
-- `F5OS 管理IP設定手順 <https://f5j-f5os-setup-/>`__ 
-
-- `F5OS 基本設定手順 <https://f5j-f5os-setup-/>`__ 
-
-- `F5OS Network設定手順 <https://f5j-f5os-setup-/>`__ 
-
-- `F5OS テナント管理手順 <https://f5j-f5os-setup-/>`__ 
-
-- `F5OS バージョン管理手順 <https://f5j-f5os-setup-/>`__ 
 
 .. toctree::
    :numbered:
