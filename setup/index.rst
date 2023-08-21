@@ -3,7 +3,7 @@ F5OS セットアップガイド・ラボガイド
 
 - `F5OS 管理IP設定手順 <https://f5j-f5os-setup-/>`__ 
 
-- `F5OS 基本設定 <https://f5j-f5os-setup-/>`__ 
+- `F5OS 基本設定手順 <https://f5j-f5os-setup-/>`__ 
 
 - `F5OS Network設定手順 <https://f5j-f5os-setup-/>`__ 
 
