@@ -39,7 +39,7 @@ rSeriesではネットワーク設定はF5OSで管理し、テナントはF5OS�
    Port3-10については25GbE/10GbEを選択でき、通信モードは混在可能です。
 
 .. image:: ./media/port-groups-5k10k.jpg
-      :width: 400
+      :width: 500
 
 2. Vlanの設定
 --------------
