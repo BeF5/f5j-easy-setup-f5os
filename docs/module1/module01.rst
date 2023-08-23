@@ -13,7 +13,7 @@ rSeriesでは、F5OSを必ず稼働させる必要があります。
 F5OSはKubernetes (K3S)ベースで開発されており、その上で従来のTMOSまたは今後リリース予定の次世代ソフトウェアがテナントとして稼働するアーキテクチャとなります。
 r4000以上のアプライアンスでは、複数のテナントを独立させて稼働することが可能です。
 
-.. image:: ./media/f5osa.jpg
+.. image:: ./media/f5osa.png
       :width: 500
 
 ※F5OS-A” (“A”は”Appliance”の意味)
