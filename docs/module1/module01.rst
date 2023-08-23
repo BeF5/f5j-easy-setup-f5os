@@ -14,7 +14,7 @@ F5OSはKubernetes (K3S)ベースで開発されており、その上で従来の
 r4000以上のアプライアンスでは、複数のテナントを独立させて稼働することが可能です。
 
 .. image:: ./media/f5osa.png
-      :width: 500
+      :width: 1000
 
 ※F5OS-A” (“A”は”Appliance”の意味)
 
