@@ -72,7 +72,7 @@ WebUIページにてコピーしたDossierをEnter Your Dossier欄へペース�
 
 ライセンスが表示されるため、クリップボードにコピーします。
 
-.. image:: ./media/license.png
+.. image:: ./media/manual-license.png
       :width: 250
 
 WebUIに戻り、License Textへライセンスをペーストします。
