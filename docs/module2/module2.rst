@@ -23,13 +23,66 @@ Hostnameを入力し、画面右下にある ``Save`` をクリックして保�
 
 画面左側のメニューバーから ``SYSTEM SETTINGS >> Licensing`` を選択し、ライセンス適用画面を開きます。
 
-ライセンスキーを入力し、アクティベーションします。
+ライセンスキーを入力し、有効化のメソッドを選択します。
 
 .. NOTE::
    rSeriesでは、F5OSに適用されたライセンスがテナントに継承されます。
    そのためライセンス管理はF5OS側での一括管理となります。
+   また、有効化メソッドのうちAutomaticについては対象機器がインターネットへ接続できる必要があります。
+   クローズド環境で使用される機器についてはManualによるライセンス有効化を実施ください。
+
+.. image:: ./media/activate.png
+      :width: 250
+
+2-1. Automaticでのライセンス有効化する
+~~~~~~~~
+Automaticを選択し、 ``Activate`` をクリックします。
+
+ライセンスに関するエンドユーザ同意事項がポップアップで表示されるため、
+
+ご一読のうえ、同意いただくことで有効化が開始されます。
+
+ライセンスの有効化が完了すると旨ポップアップが出ます。
+
+.. image:: ./media/automatic-complete.png
+      :width: 250
+
+2-2. Manualでのライセンス有効化する
+~~~~~~~~
+Manualを選択し、 ``Get Dossier.png`` をクリックします。
+
+.. image:: ./media/get-dossier.png
+      :width: 250
+
+表示されたDossierをクリップボードにコピーします。
+
+.. image:: ./media/dossier.png
+      :width: 250
+
+Licensing Server項目にある ``Click here to access F5 Licensing Server`` をクリックしてF5 Licensing Serverにブラウザ接続します。
+
+WebUIページにてコピーしたDossierをEnter Your Dossier欄へペーストし、 ``Next`` をクリックします。
+
+.. image:: ./media/licensing-server.png
+      :width: 250
+
+ライセンスに関するエンドユーザ同意事項が表示されるため、
+
+ご一読のうえ、同意いただくことで ``Next`` をクリック可能になります。
+
+ライセンスが表示されるため、クリップボードにコピーします。
 
 .. image:: ./media/license.png
+      :width: 250
+
+WebUIに戻り、License Textへライセンスをペーストします。
+
+.. image:: ./media/manual-activate.png
+      :width: 250
+
+``Activate`` をクリックします。ライセンスの有効化が完了するとその旨ポップアップが出ます。
+
+.. image:: ./media/automatic-complete.png
       :width: 250
 
 3. DNSサーバの設定
