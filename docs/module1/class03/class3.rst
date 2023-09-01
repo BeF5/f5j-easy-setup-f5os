@@ -1,5 +1,5 @@
 
-3.F5OS Network設定
+1.3.F5OS Network設定
 ########
 
 本手順ではWebGUIを使用してF5OSのNetwork設定をする手順を紹介します。
