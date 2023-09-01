@@ -2,7 +2,7 @@
 2.F5OS Tenant管理
 ########
 
-本手順ではWebGUIを使用してF5OSのTenant管理をする手順を紹介します。
+以下の手順でテナントをデプロイします。
 
 
 2.1. テナントイメージのダウンロード
@@ -46,24 +46,3 @@
 .. image:: ./media/tenant-deployed.png
       :width: 500
 
-2.4. テナントのリサイズ
---------------
-``TENANT MANAGEMENT >> Tenant Deployments`` において対象テナントを選択し、状態を ``Provisione`` へ変更します。
-
-テナントのstatusがProvisionedとなったらテナント名をクリックし、設定画面においてリソースサイズを変更します。
-
-.. NOTE::
-   Resource ProvisioningにおいてRecommendedを選択している場合、
-   vCPUの数に応じてメモリ量は自動的に変更されます。
-
-.. image:: ./media/tenant-provisioned.png
-      :width: 500
-
-2.5. テナントの削除
---------------
-``TENANT MANAGEMENT >> Tenant Deployments`` において対象テナントを選択し、 ``Delete`` クリックします。
-
-テナント削除について改めて確認するポップアップに対して ``OK`` をクリックするとテナントは削除されます。
-
-.. image:: ./media/tenant-delete.png
-      :width: 500
