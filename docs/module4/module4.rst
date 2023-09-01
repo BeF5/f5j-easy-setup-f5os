@@ -1,11 +1,11 @@
 
-4.F5OS Tenant管理
+2.F5OS Tenant管理
 ########
 
 本手順ではWebGUIを使用してF5OSのTenant管理をする手順を紹介します。
 
 
-1. テナントイメージのダウンロード
+2.1. テナントイメージのダウンロード
 --------------
 \ `F5 downloads <https://my.f5.com/s/downloads>`__ から使用するテナントのイメージファイルをダウンロードします。
 
@@ -15,7 +15,7 @@
    をご参照ください。
 
 
-2. テナントイメージのアップロード
+2.2. テナントイメージのアップロード
 --------------
 画面左側にあるメニューバーから ``TENANT MANAGEMENT >> Tenant Images`` を選択し、テナントイメージの管理画面を開きます。
 
@@ -24,7 +24,7 @@
 .. image:: ./media/tenant-image-upload.png
       :width: 400
 
-3. テナントの設定
+2.3. テナントの設定
 --------------
 画面左側にあるメニューバーから ``TENANT MANAGEMENT >> Tenant Deployments`` を選択し、 ``Add`` をクリックします。
 
@@ -46,7 +46,7 @@
 .. image:: ./media/tenant-deployed.png
       :width: 500
 
-4. テナントのリサイズ
+2.4. テナントのリサイズ
 --------------
 ``TENANT MANAGEMENT >> Tenant Deployments`` において対象テナントを選択し、状態を ``Provisione`` へ変更します。
 
@@ -59,7 +59,7 @@
 .. image:: ./media/tenant-provisioned.png
       :width: 500
 
-5. テナントの削除
+2.5. テナントの削除
 --------------
 ``TENANT MANAGEMENT >> Tenant Deployments`` において対象テナントを選択し、 ``Delete`` クリックします。
 
