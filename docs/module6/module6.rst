@@ -1,28 +1,46 @@
-================================================
-おわりに
-================================================
+5. トラブル発生時の操作
+########
 
-F5OS　初期セットアップに関しては以上で終了となります。
+本章では、WebUIを使ったF5OSの障害発生時の操作方法について、ご紹介致します。
 
-**＜F5ネットワークスWEBサイトの紹介＞**
+5.1. QKviewの取得
+--------------
 
-| F5ネットワークスジャパン総合サイト
-| https://f5.com/jp
+画面左側にあるメニューバーから ``SYSTEM SETTINGS >> System Reports`` を選択し、システムレポートの管理画面を開きます。
 
-| F5のセキュリティ ソリューション
-| https://f5.com/jp/products/security
+``Gennerate QKView`` をクリックしQKviewの作成を開始します。
 
-| AskF5：ナレッジベース総合サイト (英語)
-| https://support.f5.com/kb/en-us.html
+.. image:: ./media/Generate-QKView.png
+      :width: 400
 
-| DevCentral: F5ユーザコミュニティサイト (英語：アカウント登録が必要です)
-| https://community.f5.com/
+ファイル名を入力し ``Generate QKView`` をクリックするとQKviewが作成されます。
 
-| F5公式販売代理店リスト
-| https://www.f5.com/ja_jp/partners/jp-find-a-partner
+.. image:: ./media/Generate-QKView2.png
+      :width: 400
 
-以上
+QKvieWの作成が完了するとQKViews項目にて確認できます。
 
-| 本資料は設計・構築を補助するための情報提供を目的としています。内容についてできる限り正確を期すよう努めてはおりますが、いかなる明示または暗黙の保証も責任も負いかねます。本資料の情報は、使用先の責任において使用されるべきものであることをあらかじめご了承ください。 この文書に記載された製品の仕様、ならびに動作に関しては各社ともにこれらを予告なく改変する場合がありま す。F5製品の各機能やコマンドに関する正式な情報に関しては AskF5 (https://support.f5.com/)の対応するハードウェアプラットフォーム、ソフトウェアバージョンに即してご確認下さい。
-|
-| 本資料の著作権は、F5ネットワークスジャパン合同会社にあります。 本文中にある製品名は、各社の商標または登録商標です。
+.. image:: ./media/verify-QKView.png
+      :width: 400
+
+5.2. iHealthへのアップロード
+--------------
+
+画面左側にあるメニューバーから ``SYSTEM SETTINGS >> System Reports`` を選択し、システムレポートの管理画面を開きます。
+
+アップロード対象のQkviewを選択し、 ``Upload to iHealth`` をクリックします。
+
+.. image:: ./media/iHealth.png
+      :width: 400
+
+ユーザ名とパスワードを入力し ``Upload`` をクリックするとQKviewがiHealthへアップロードされます。
+
+.. image:: ./media/iHealth2.png
+      :width: 400
+
+アップロードが完了すると ``iHealth Uploads`` 項目のStatusが　``Analyzing`` から ``Complete`` へ変更されます。
+
+.. image:: ./media/iHealth3.png
+      :width: 400
+
+
