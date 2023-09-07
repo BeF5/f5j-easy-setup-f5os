@@ -14,9 +14,8 @@
    詳細情報は\ `Overview of the BIG-IP tenant image types <https://support.f5.com/csp/article/K45191957>`__
    をご参照ください。
 
-テナントイメージの種類
-
-.. list-table::
+.. list-table:: テナントイメージの種類
+   :header-rows: 1
 
    * - BIG-IP テナントイメージ
      - Use Case
