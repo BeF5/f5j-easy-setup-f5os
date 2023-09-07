@@ -4,7 +4,7 @@
 
 以下の手順でテナントをリサイズします。
 
-``TENANT MANAGEMENT >> Tenant Deployments`` において対象テナントを選択し、状態を ``Provisione`` へ変更します。
+``TENANT MANAGEMENT >> Tenant Deployments`` において対象テナントを選択し、状態を ``Provisioned`` へ変更します。
 
 テナントのstatusがProvisionedとなったらテナント名をクリックし、設定画面においてリソースサイズを変更します。
 
