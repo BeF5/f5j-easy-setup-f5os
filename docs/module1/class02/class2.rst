@@ -154,7 +154,7 @@ Time Zoneの項目にてドロップダウンリストから該当するタイ�
 
 1.2.5-3. 時刻同期の確認 
 ~~~~~~~~
-F5OS-Aで時刻同期が行われているかどうかの確認は、F5OS-AのCLIにrootでログインして、「chronic sources」コマンドを実行してください。
+F5OSで時刻同期が行われているかどうかの確認は、F5OSのCLIにrootでログインして、「chronic sources」コマンドを実行してください。
 
 .. code-block:: cmdin
 
