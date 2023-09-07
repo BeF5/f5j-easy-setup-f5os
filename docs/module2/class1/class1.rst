@@ -10,7 +10,7 @@
 \ `F5 downloads <https://my.f5.com/s/downloads>`__ から使用するテナントのイメージファイルをダウンロードします。
 
 .. NOTE::
-   利用するイメージによってぢ要可能なテナント数が異なります。
+   利用するイメージによって収容可能なテナント数が異なります。
    詳細情報は\ `Overview of the BIG-IP tenant image types <https://support.f5.com/csp/article/K45191957>`__
    をご参照ください。
 
