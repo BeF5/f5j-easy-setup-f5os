@@ -4,8 +4,33 @@
 
 本手順ではWebGUIを使用してF5OSの基本設定をする方法を紹介します。
 
+1.2.1. WebUIへのログイン
+--------------
 
-1.2.1. Hostnameの設定
+ログイン画面にデフォルトのID ``admin`` 、およびパスワード ``admin`` でログインします。
+
+.. image:: ./media/login.png
+      :width: 250
+
+パスワードの変更を求められるため、現在のパスワードを入力後、
+
+新しいパスワードを２回入力してください。
+
+.. NOTE::
+   パスワードは複数世代にわたって管理されるため、類似性の高いパスワードを使いまわすことはできません。
+   セキュリティの観点から、辞書用語やキーボード上並んだ位置にある文字の羅列等、およびデフォルトパスワードである ``admin`` はパスワードとして設定できません。
+
+.. image:: ./media/change-password.png
+      :width: 250
+
+パスワードの変更が完了すると再度ログインを求められます。
+
+ID ``admin`` と新しいパスワードでログインしてください。
+
+.. image:: ./media/new-password.png
+      :width: 250
+
+1.2.2. Hostnameの設定
 --------------
 
 画面左側にあるメニューバーから ``SYSTEM SETTINGS >> General`` を選択し、一般設定画面を開きます。
@@ -18,7 +43,7 @@ Hostnameを入力し、画面右下にある ``Save`` をクリックして保�
 .. image:: ./media/host-name.png
       :width: 250
 
-1.2.2. ライセンスの設定
+1.2.3. ライセンスの設定
 --------------
 
 画面左側のメニューバーから ``SYSTEM SETTINGS >> Licensing`` を選択し、ライセンス適用画面を開きます。
@@ -34,7 +59,7 @@ Hostnameを入力し、画面右下にある ``Save`` をクリックして保�
 .. image:: ./media/activate.png
       :width: 250
 
-1.2.2-1. Automaticでのライセンス有効化する
+1.2.3-1. Automaticでのライセンス有効化する
 ~~~~~~~~
 Automaticを選択し、 ``Activate`` をクリックします。
 
@@ -47,7 +72,7 @@ Automaticを選択し、 ``Activate`` をクリックします。
 .. image:: ./media/automatic-complete.png
       :width: 250
 
-1.2.2-2. Manualでのライセンス有効化する
+1.2.3-2. Manualでのライセンス有効化する
 ~~~~~~~~
 Manualを選択し、 ``Get Dossier.png`` をクリックします。
 
@@ -85,7 +110,7 @@ WebUIに戻り、License Textへライセンスをペーストします。
 .. image:: ./media/automatic-complete.png
       :width: 250
 
-1.2.3. DNSサーバの設定
+1.2.4. DNSサーバの設定
 --------------
 
 画面左側のメニューバーから ``SYSTEM SETTINGS >> DNS`` を選択し、DNS設定画面を開きます。
@@ -99,7 +124,7 @@ DNS Lookup Serversの項目にて ``Add`` を選択し、DNSサーバのIP addre
       :width: 250
 
 
-1.2.4. 時刻設定
+1.2.5. 時刻設定
 --------------
 
 画面左側のメニューバーから ``SYSTEM SETTINGS >> Time Setings`` を選択し、時刻設定画面を開きます。
@@ -109,7 +134,7 @@ DNS Lookup Serversの項目にて ``Add`` を選択し、DNSサーバのIP addre
 .. image:: ./media/time.png
       :width: 250
 
-1.2.4-1. NTP Serverの設定
+1.2.5-1. NTP Serverの設定
 ~~~~~~~~
 NTP Serversの項目にて ``Add`` を選択し、NTPサーバのHostnameを入力し、
 
@@ -119,7 +144,7 @@ NTP Serversの項目にて ``Add`` を選択し、NTPサーバのHostnameを入�
       :width: 250
 
 
-1.2.4-2. Time Zoneの設定 
+1.2.5-2. Time Zoneの設定 
 ~~~~~~~~
 Time Zoneの項目にてドロップダウンリストから該当するタイムゾーンを選択します。
 
@@ -127,7 +152,7 @@ Time Zoneの項目にてドロップダウンリストから該当するタイ�
       :width: 250
 
 
-1.2.5. ログ設定
+1.2.6. ログ設定
 --------------
 
 画面左側のメニューバーから ``SYSTEM SETTINGS >> Log Setings`` を選択し、ログ設定画面を開きます。
@@ -137,7 +162,7 @@ Time Zoneの項目にてドロップダウンリストから該当するタイ�
 .. image:: ./media/log-server.png
       :width: 250
 
-1.2.5-1. 外部ログサーバの設定　
+1.2.6-1. 外部ログサーバの設定　
 ~~~~~~~~
 外部のログサーバへログを転送する場合には、Remote Log Serversの項目にて ``Add`` を選択し、
 
@@ -148,13 +173,13 @@ Time Zoneの項目にてドロップダウンリストから該当するタイ�
 .. image:: ./media/r-log-server.png
       :width: 250
 
-1.2.5-2. ログ出力レベルの設定
+1.2.6-2. ログ出力レベルの設定
 ~~~~~~~~
 Software Component Log Levels項目にてドロップダウンリストから各コンポーネントのログ出力レベルを選択します。
 
 変更完了しましたら、 ``Save`` をクリックして設定を保存します。
 
-1.2.5-3. ログ確認
+1.2.6-3. ログ確認
 ~~~~~~~~
 出力されたログファイルは ``SYSTEM SETTINGS >> File Utilities`` から確認可能です。
 
@@ -165,11 +190,11 @@ Base Directory項目にてドロップダウンリストから ``log/system`` �
 .. image:: ./media/log-file.png
       :width: 250
 
-1.2.6. SNMP設定
+1.2.7. SNMP設定
 --------------
 SNMPリクエストを受けるけるためには接続許可リストへの追加、およびSNMP設定が必要です。
 
-1.2.6-1. 許可リストへの追加設定　
+1.2.7-1. 許可リストへの追加設定　
 ~~~~~~~~
 画面左側のメニューバーから ``SYSTEM SETTINGS >> Allow List`` を選択し、許可リスト設定画面を開きます。
 
@@ -180,7 +205,7 @@ SNMPリクエストを受けるけるためには接続許可リストへの追�
 .. image:: ./media/snmp-allow-list.png
       :width: 250
 
-1.2.6-2. SNMPの設定
+1.2.7-2. SNMPの設定
 ~~~~~~~~
 画面左側のメニューバーから ``SYSTEM SETTINGS >> SNMP Configuration`` を選択し、SNMP設定画面を開きます。
 
