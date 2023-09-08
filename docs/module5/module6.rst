@@ -11,7 +11,7 @@
 .. NOTE::
    バックアップした機器と異なる筐体にリストアを適用する際にPrimary-keyが必要になることがあります。
 
-Configモードに移行し、PassphraseとSaltを設定します。
+Configモードに移行し、 ``passphrase`` と ``salt`` を設定します。
 
 .. code-block:: cmdin
 
