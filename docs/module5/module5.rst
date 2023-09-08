@@ -30,7 +30,13 @@ F5OSイメージのアップロードが完了したら、Update Base OS Softwar
 
 ドロップダウンリストからアップグレード先のバージョンを選択します。
 
+.. image:: ./media/picture1.png
+      :width: 400
+
 ``Save`` をクリックし、アップグレードとそれに伴い管理セッションが終了する旨通達するポップアップに対して ``OK`` をクリックします。
+
+.. image:: ./media/picture2.png
+      :width: 400
 
 アップグレードが完了したら再度WebGUIに接続可能になります。
 
