@@ -17,7 +17,7 @@
 3-2. F5OSイメージのアップロード
 ~~~~~~~~
 
-画面左側にあるメニューバーから ``SYSTEM SETTINGS >> Software Management`` を選択し、F5OSイメージの管理画面を開きます。
+F5OSのWeb GUIにログインし、画面左側にあるメニューバーから ``SYSTEM SETTINGS >> Software Management`` を選択し、F5OSイメージの管理画面を開きます。
 
 Base OS Images項目にある ``Upload`` をクリックしアップロードするイメージファイルを選択します。
 
