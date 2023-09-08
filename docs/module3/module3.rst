@@ -10,4 +10,4 @@
    :caption: 目次:
    :glob:
 
-   module**/module**
+   class**/class**
