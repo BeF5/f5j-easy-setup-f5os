@@ -53,7 +53,7 @@ Configモードに移行し、 ``passphrase`` と ``salt`` を設定します。
 .. code-block:: cmdin
 
    r10k-2# config
-   r10k-2#
+   r10k-2(config)#
 
 コンフィグを一度初期化し、バックアップファイルからリストアします。
 
