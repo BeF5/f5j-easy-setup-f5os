@@ -78,7 +78,8 @@ Configモードに移行し、 ``passphrase`` と ``salt`` を設定します。
 .. NOTE::
    F5OSのリストアにより、テナントに割り当てるリソース等のデプロイにおいて指定するデプロイ構成がリストアされますが、
    Virtual Serverをはじめとするテナント内で設定するコンポーネントについて、別途テナント内でUCSからリストアする必要があります。
-   :doc: `UCSのリストア <{https://f5j-easy-setup-ltm-17.readthedocs.io/ja/latest/content09/content09.html#ucs}>`をご参照ください。
+| `UCSのリストア`_をご参照ください。
+.. _UCSのリストア:  https://f5j-easy-setup-ltm-17.readthedocs.io/ja/latest/content09/content09.html#ucs
 
 
 
