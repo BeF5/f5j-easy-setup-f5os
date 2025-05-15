@@ -45,3 +45,31 @@ Configモードに移行し、 ``passphrase`` と ``salt`` を設定します。
 .. NOTE::
    F5OSのバックアップファイル内には、テナントに割り当てるリソース等のデプロイにおいて指定するデプロイ構成が含まれますが、
    Virtual Serverをはじめとするテナント内で設定するコンポーネントについては含まれないため、別途テナント内でUCSファイルを作成する必要があります。
+
+4-3. バックアップファイルからのリストア
+~~~~~~~~
+対象機器にCLIで接続し、adminアカウントでログインします。
+
+.. code-block:: cmdin
+
+   r10k-2# config
+   r10k-2#
+
+コンフィグを一度初期化し、バックアップファイルからリストアします。
+
+.. code-block:: cmdin
+
+   r10k-2(config)#
+   r10k-2(config)# system database reset-to-default
+   Removing all user configuration will delete all tenants and stop traffic processing.
+   Proceed? [yes/no]: yes
+   r10k-2(config)#
+   r10k-2(config)# system database config-restore name <backup-file-name>
+   A clean configuration is required before restoring to a previous configuration.
+   Please perform a reset-to-default operation if you have not done so already.
+   Proceed? [yes/no]: yes
+   result Database config-restore successful.
+   r10k-2(config)#
+   System message at 20xx-xx-xx xx:xx:xx...
+   Commit performed by admin via tcp using cli.
+   r10k-2(config)#
