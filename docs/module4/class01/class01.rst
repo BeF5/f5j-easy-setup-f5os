@@ -78,12 +78,7 @@ Configモードに移行し、 ``passphrase`` と ``salt`` を設定します。
 .. seealso::
    F5OSのリストアにより、テナントに割り当てるリソース等のデプロイにおいて指定するデプロイ構成がリストアされますが、
    Virtual Serverをはじめとするテナント内で設定するコンポーネントについて、別途テナント内でUCSからリストアする必要があります。
-   `UCSのリストア<https://f5j-easy-setup-ltm-17.readthedocs.io/ja/latest/content09/content09.html#ucs>`_
-   をご参照ください。
-   Python's :py:mod:`zipfile` module
-      Documentation of Python's standard :py:mod:`zipfile` module.
-
-   `GNU tar manual, Basic Tar Format <https://example.org>`_
-      Documentation for tar archive files, including GNU tar extensions.
+   `UCSのリストアt <https://f5j-easy-setup-ltm-17.readthedocs.io/ja/latest/content09/content09.html#ucs>`_
+   　 をご参照ください。
 
 
